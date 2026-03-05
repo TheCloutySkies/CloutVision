@@ -1,21 +1,24 @@
 # setup_cloutvision.py
 
+import os
 import subprocess
 import sys
 
-def install(package):
-    subprocess.check_call([sys.executable, '-m', 'pip', 'install', package])
-
-if __name__ == "__main__":
-    # List of dependencies to install
+def install_dependencies():
+    # List of required dependencies
     dependencies = [
-        'numpy',  # Example dependency
-        'pandas',  # Example dependency
-        # Add more dependencies as needed
+        'numpy',
+        'pandas',
+        'scikit-learn',
+        'matplotlib',
+        'tensorflow',
+        'flask'
     ]
     
+    # Iterate through each dependency and install it
     for package in dependencies:
-        print(f'Installing {package}...')
-        install(package)
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
-    print('All dependencies installed!')
+if __name__ == "__main__":
+    install_dependencies()
+    print("All dependencies have been installed.")
