@@ -2,3 +2,7 @@ venv/
 *.jpg
 *.mp4
 .DS_Store
+venv/
+*.jpg
+*.mp4
+.DS_Store
