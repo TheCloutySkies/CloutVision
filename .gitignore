@@ -1,12 +1,19 @@
 venv/
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+
+# Generated outputs / logs
+session_logs/
+clean_scan_*.pdf
+clean_scan_*.png
+
+# Large model weights / ML artifacts
+*.pt
+*.onnx
+
+# Media (optional)
 *.jpg
 *.mp4
-.DS_Store
-venv/
-*.jpg
-*.mp4
-.DS_Store
-venv/
-*.jpg
-*.mp4
-.DS_Store

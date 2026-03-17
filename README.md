@@ -12,4 +12,6 @@ And yes, before you ask this app was vibe coded. I was bored. At least it's free
 1. Clone the repo: `git clone https://github.com/TheCloutySkies/CloutVision.git`
 2. Create environment: `python3 -m venv venv && source venv/bin/activate`
 3. Install dependencies: `pip install -r requirements.txt`
-4. Run: `python3 cloutvision_core.py`
+4. Run:
+   - **PyQt6 (recommended):** `python cloutvision_qt.py` — native window, smoother UI, resizable.
+   - **OpenCV window:** `python cloutvision_core.py` — original HighGUI-based UI.
